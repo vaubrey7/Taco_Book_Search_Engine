@@ -51,7 +51,7 @@ const LoginForm = () => {
     <>
       <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
         <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
-          Something went wrong with your login credentials!
+          Something is wrong with Your login credentials!
         </Alert>
         <Form.Group>
           <Form.Label htmlFor='email'>Email</Form.Label>
@@ -76,7 +76,7 @@ const LoginForm = () => {
             value={userFormData.password}
             required
           />
-          <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
+          <Form.Control.Feedback type='invalid'>Password is required</Form.Control.Feedback>
         </Form.Group>
         <Button
           disabled={!(userFormData.email && userFormData.password)}
