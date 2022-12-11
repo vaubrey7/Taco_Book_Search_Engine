@@ -12,7 +12,7 @@ const resolvers = {
 
                 return userData;
             };
-            throw new AuthenticationError('You shall not pass...without logging in!');
+            throw new AuthenticationError('WARNING WILL ROBINSON YOU MUST log in!');
         },
     },
 
@@ -20,12 +20,12 @@ const resolvers = {
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
             if (!user) {
-                throw new AuthenticationError('Do you even go here?');
+                throw new AuthenticationError('WARNING WILL ROBINSON INTRUDER ALERT');
             }
 
             const correctPW = await user.isCorrectPassword(password);
             if (!correctPW) {
-                throw new AuthenticationError('Stop trying to make fetch happen!');
+                throw new AuthenticationError('WARNING WILL ROBINSON fetch ALERT!');
             }
 
             const token = signToken(user);
@@ -47,7 +47,7 @@ const resolvers = {
                     )
                 return updatedUser;
             };
-            throw new AuthenticationError('No books for you! Unless you log in!');
+            throw new AuthenticationError('WILL ROBINSON YOU MUST LOGIN YO OBTAIN A BOOK!');
         },
         removeBook: async (_parent, { bookId }, context) => {
             if (context.user) {
@@ -58,7 +58,7 @@ const resolvers = {
                 );
                 return userUpdate;
             };
-            throw new AuthenticationError('You need to log in first, how many times do you need to be told?');
+            throw new AuthenticationError('ERROR WILL ROBINSON LOGIN REQUIRED');
         },
     },
 };
