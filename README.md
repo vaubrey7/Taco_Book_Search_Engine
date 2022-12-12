@@ -66,10 +66,7 @@ Book Search Engine searched for "Gandolf":
 ![Gandolf](./Assets/2022-12-11%20(8).png)
 
 # Video 
-![Youtube]<video width="320" height="240" controls>
-  <source src="(https://youtu.be/MG9d9O18Uqs)" type="video/mp4">
-  Your browser does not support the video tag.
-  </video> 
+![Youtube] <a link = "https://youtu.be/MG9d9O18Uqs" >
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT) <br/>
