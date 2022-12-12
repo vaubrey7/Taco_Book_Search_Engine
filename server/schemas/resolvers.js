@@ -21,7 +21,7 @@ const resolvers = {
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
             if (!user) {
-                throw new AuthenticationError('WARNING WILL ROBINSON INTRUDER ALERT');
+                throw new AuthenticationError('WARNING WILL ROBINSON INTRUDER Email ALERT');
             }
 // checks PW
             const correctPW = await user.isCorrectPassword(password);
@@ -51,7 +51,7 @@ const resolvers = {
                 return updatedUser;
             };
             // you are not allowed to search for a book without signing in
-            throw new AuthenticationError('WILL ROBINSON YOU MUST LOGIN YO OBTAIN A BOOK!');
+            throw new AuthenticationError('WILL ROBINSON YOU MUST LOGIN TO OBTAIN A BOOK!');
         },
         // allows a user to remove a book from savedBooks
         removeBook: async (_parent, { bookId }, context) => {

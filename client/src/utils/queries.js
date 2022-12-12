@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-
+// pulls all user info
 export const GET_ME = gql`
     {
         me {

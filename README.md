@@ -1,5 +1,5 @@
-# Taco_Book_Search_Engine
-<h1 align="center"> Book Search Engine</h1>
+
+<h1 align="center"> Taco_Book_Search_Engine</h1>
 
 <p align="center">
     <a href="https://github.com/vaubrey7"><img src="https://img.shields.io/github/followers/jasonsin88?style=social" target="_blank" /></a>
@@ -33,13 +33,13 @@ Deployed live app at:
 
 This project is created with the following technologies:
 - Javascript
-- GraphQL
 - Node.js
+- GraphQL
 - Express.js
-- React
 - MongoDB
-- Apollo Server
+- React
 - Google Books API
+- Apollo Server
 
 ## Installation
 To get started, clone this repository by copying the below into your terminal:
@@ -63,7 +63,10 @@ Book Search Engine Searched "Star Wars": Using Bing photo search
 ![BookSearchEngine](./Assets/2022-12-11%20(7).png)
 
 Book Search Engine searched for "Gandolf":
-![BSE-HarryPotter](./Assets/2022-12-11%20(8).png)
+![Gandolf](./Assets/2022-12-11%20(8).png)
+
+# Video 
+![Youtube](https://youtu.be/MG9d9O18Uqs)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT) <br/>
