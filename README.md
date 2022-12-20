@@ -78,4 +78,4 @@ This project is licensed under MIT
 
 ## Contributing
  [Vaughn Aubrey](https://github.com/vaubrey7)
- Major Thanks to Jason Sin for collaberationg on this project.
+ Major Thanks to Jason Sin for collaberating on this project.
